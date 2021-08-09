@@ -18,13 +18,19 @@ impl TalentRepository{
             email,
             name,
             username,
-            address
+            address,
+            body_size
         } = data;
         doc! {
             "email": email,
             "name": name,
             "username":username,
-            "address":address
+            "address":address,
+            "body_size":{
+                "height":body_size.height,
+                "bust":body_size.bust,
+                "waist":body_size.waist
+            }
 
         }
     }

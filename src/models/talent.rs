@@ -6,10 +6,10 @@ pub struct TalentData {
     pub email : String,
     pub name: String,
     pub username: String,
-    pub address: String
+    pub address: String,
+    pub body_size: TalentBodySize
 }
 #[derive(Debug, Serialize, Deserialize)]
-#[derive(Clone)]
 pub struct TalentBodySize {
     pub height: i32,
     pub bust: i32,
